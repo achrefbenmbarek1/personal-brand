@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achref Ben Mbarek - Software Engineer</title>
+    <meta name="description" content="Curious problem-solver who leverages deep technical exploration to drive measurable business results. Software Engineer specializing in AI/ML, cloud-native technologies, and innovative solutions.">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="nav-brand">
+                    Achref Ben Mbarek
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="nav-menu">
+                    <button onclick="scrollToSection('home')" class="nav-link" data-testid="nav-home">Home</button>
+                    <button onclick="scrollToSection('about')" class="nav-link" data-testid="nav-about">About</button>
+                    <button onclick="scrollToSection('experience')" class="nav-link" data-testid="nav-experience">Experience</button>
+                    <button onclick="scrollToSection('projects')" class="nav-link" data-testid="nav-projects">Projects</button>
+                    <button onclick="scrollToSection('skills')" class="nav-link" data-testid="nav-skills">Skills</button>
+                    <button onclick="scrollToSection('contact')" class="nav-link" data-testid="nav-contact">Contact</button>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="mobile-menu-btn">
+                    <button onclick="toggleMobileMenu()" data-testid="mobile-menu-button">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="mobile-menu">
+            <div class="mobile-menu-content">
+                <button onclick="scrollToSection('home')" class="mobile-nav-link" data-testid="mobile-nav-home">Home</button>
+                <button onclick="scrollToSection('about')" class="mobile-nav-link" data-testid="mobile-nav-about">About</button>
+                <button onclick="scrollToSection('experience')" class="mobile-nav-link" data-testid="mobile-nav-experience">Experience</button>
+                <button onclick="scrollToSection('projects')" class="mobile-nav-link" data-testid="mobile-nav-projects">Projects</button>
+                <button onclick="scrollToSection('skills')" class="mobile-nav-link" data-testid="mobile-nav-skills">Skills</button>
+                <button onclick="scrollToSection('contact')" class="mobile-nav-link" data-testid="mobile-nav-contact">Contact</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <div class="hero-avatar float-animation">
+                    <div class="avatar-ring">
+                        <div class="avatar-inner">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="gradient-text">Achref Ben Mbarek</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Software Engineer & Curious Mind
+                </p>
+                
+                <p class="hero-description">
+                    Fascinated by the intersection of physics, science, finance, and software development. 
+                    I explore ideas deeply and transform curiosity into innovative technical solutions that drive measurable business results.
+                </p>
+                
+                <div class="hero-buttons">
+                    <button onclick="scrollToSection('projects')" class="btn btn-primary" data-testid="button-view-work">
+                        <i class="fas fa-rocket"></i>
+                        View My Work
+                    </button>
+                    <button onclick="scrollToSection('contact')" class="btn btn-secondary" data-testid="button-contact">
+                        <i class="fas fa-envelope"></i>
+                        Get In Touch
+                    </button>
+                </div>
+                
+                <div class="hero-social">
+                    <a href="https://github.com/achrefbenmbarek1" target="_blank" rel="noopener noreferrer" data-testid="link-github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/achref-ben-mbarek-3356a8224" target="_blank" rel="noopener noreferrer" data-testid="link-linkedin">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:achrefbenmbarek123@gmail.com" data-testid="link-email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">A curious problem-solver at the intersection of multiple disciplines</p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-cards">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-icon primary">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3>Curious Explorer</h3>
+                        </div>
+                        <p>
+                            My fascination spans from physics and science to the evolving world of finance. 
+                            I'm currently writing a book exploring the intersection of these passions, 
+                            examining our thoughts and what we really mean when we say we understand something.
+                        </p>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-icon accent">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <h3>Technical Innovation</h3>
+                        </div>
+                        <p>
+                            I combine deep technical exploration with practical business impact. 
+                            From vector-similarity search with K-NN algorithms to custom Kubernetes operators, 
+                            I transform complex ideas into measurable results.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="card impact-card">
+                    <h3>Impact & Philosophy</h3>
+                    <div class="impact-items">
+                        <div class="impact-item">
+                            <div class="impact-icon primary">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <div>
+                                <h4>Cost Optimization</h4>
+                                <p>Eliminated ~$100K in projected annual costs through innovative solutions</p>
+                            </div>
+                        </div>
+                        
+                        <div class="impact-item">
+                            <div class="impact-icon accent">
+                                <i class="fas fa-code-branch"></i>
+                            </div>
+                            <div>
+                                <h4>Open Source Contribution</h4>
+                                <p>Actively contributing to upstream projects and building developer tools</p>
+                            </div>
+                        </div>
+                        
+                        <div class="impact-item">
+                            <div class="impact-icon primary">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <div>
+                                <h4>Deep Problem Solving</h4>
+                                <p>I believe in understanding problems at their core before building solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Experience</h2>
+                <p class="section-subtitle">Building innovative solutions across multiple domains</p>
+            </div>
+            
+            <div class="experience-list">
+                <!-- Calgra Group -->
+                <div class="experience-item card-hover">
+                    <div class="experience-header">
+                        <div class="experience-info">
+                            <h3 class="experience-title">Software Engineer</h3>
+                            <p class="experience-company">Calgra Group</p>
+                            <p class="experience-period">Scotland/United Kingdom (remote) • Apr 2025 - Sep 2025</p>
+                        </div>
+                        <div class="experience-badge">
+                            <span class="badge primary">Current Role</span>
+                        </div>
+                    </div>
+                    
+                    <div class="experience-projects">
+                        <div class="project-card">
+                            <h4 class="project-title">
+                                <i class="fas fa-chart-line"></i>
+                                Kompera Platform
+                            </h4>
+                            <ul class="project-details">
+                                <li>Event-Driven architecture for business insights</li>
+                                <li>Replaced GPT classifier with vector-similarity + KNN</li>
+                                <li>Saved $1K+/month, projected $100K+/year</li>
+                                <li>Declarative RabbitMQ configuration</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="project-card">
+                            <h4 class="project-title">
+                                <i class="fas fa-mobile-alt"></i>
+                                Scorpii Score App
+                            </h4>
+                            <ul class="project-details">
+                                <li>Event Sourcing for full auditability</li>
+                                <li>Asynchronous CQRS for 15k concurrent users</li>
+                                <li>Migrated to Hetzner Object Storage</li>
+                                <li>Integrated automated testing in CI</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-tags">
+                        <span class="tech-tag">.NET</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">RabbitMQ</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">PgVector</span>
+                        <span class="tech-tag">Flutter</span>
+                    </div>
+                </div>
+                
+                <!-- Axefinance -->
+                <div class="experience-item card-hover">
+                    <div class="experience-header">
+                        <div class="experience-info">
+                            <h3 class="experience-title">Software Engineer Intern</h3>
+                            <p class="experience-company">Axefinance</p>
+                            <p class="experience-period">Tunis/Tunisia • Feb 2024 - Sep 2024</p>
+                        </div>
+                    </div>
+                    
+                    <div class="experience-projects">
+                        <div class="project-card">
+                            <h4 class="project-title">
+                                <i class="fas fa-cloud"></i>
+                                Cloud-Native Architecture
+                            </h4>
+                            <ul class="project-details">
+                                <li>Microservices with Azure DevOps CI</li>
+                                <li>GitOps culture with Argo CD</li>
+                                <li>Observability with Prometheus/Grafana</li>
+                                <li>Event Sourcing for auditability</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="project-card">
+                            <h4 class="project-title">
+                                <i class="fas fa-shield-alt"></i>
+                                Quality & Reliability
+                            </h4>
+                            <ul class="project-details">
+                                <li>Contract testing with Pact</li>
+                                <li>Fault tolerance with event notifications</li>
+                                <li>Independent microservice deployments</li>
+                                <li>Distributed tracing with Jaeger</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-tags">
+                        <span class="tech-tag">.NET</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Angular</span>
+                        <span class="tech-tag">Kubernetes</span>
+                        <span class="tech-tag">Argo CD</span>
+                        <span class="tech-tag">Prometheus</span>
+                    </div>
+                </div>
+                
+                <!-- PWC -->
+                <div class="experience-item card-hover">
+                    <div class="experience-header">
+                        <div class="experience-info">
+                            <h3 class="experience-title">Software Engineer Intern</h3>
+                            <p class="experience-company">PwC</p>
+                            <p class="experience-period">Tunis/Tunisia • Jun 2023 - Aug 2023</p>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card single-project">
+                        <h4 class="project-title">
+                            <i class="fas fa-balance-scale"></i>
+                            Asset Reconciliation System
+                        </h4>
+                        <ul class="project-details">
+                            <li>FastAPI backend with MongoDB</li>
+                            <li>Event Sourcing for complete auditability</li>
+                            <li>Optimistic concurrency control</li>
+                            <li>Asynchronous CQRS with Redis and Celery</li>
+                            <li>Comprehensive testing with Pytest and Selenium</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tech-tags">
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Redis</span>
+                        <span class="tech-tag">Celery</span>
+                        <span class="tech-tag">Pytest</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Innovative solutions showcasing technical depth and creativity</p>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- AI Agent Project -->
+                <div class="project-card-main card-hover">
+                    <div class="project-header">
+                        <div class="project-icon primary">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>AI Agent</h3>
+                    </div>
+                    
+                    <p class="project-description">
+                        Developed a ChatGPT-like AI agent capable of dynamically selecting and invoking user-specified tools, 
+                        leveraging modern AI frameworks for intelligent decision-making.
+                    </p>
+                    
+                    <div class="tech-tags">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">LangChain</span>
+                        <span class="tech-tag">Gemini 2.5</span>
+                        <span class="tech-tag">Streamlit</span>
+                    </div>
+                    
+                    <div class="project-footer">
+                        <span class="project-category">
+                            <i class="fas fa-brain"></i>
+                            AI/ML
+                        </span>
+                        <a href="https://github.com/achrefbenmbarek1" target="_blank" rel="noopener noreferrer" data-testid="link-ai-agent-project">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- n8n Lead Qualifier -->
+                <div class="project-card-main card-hover">
+                    <div class="project-header">
+                        <div class="project-icon accent">
+                            <i class="fas fa-workflow"></i>
+                        </div>
+                        <h3>Lead Qualifier Workflow</h3>
+                    </div>
+                    
+                    <p class="project-description">
+                        Built an automated lead-scoring system that parses form submissions, scores leads as Cold/Warm/Hot, 
+                        stores records in Airtable, and sends Slack alerts with follow-up reminders.
+                    </p>
+                    
+                    <div class="tech-tags">
+                        <span class="tech-tag">n8n</span>
+                        <span class="tech-tag">Airtable</span>
+                        <span class="tech-tag">Slack API</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    
+                    <div class="project-footer">
+                        <span class="project-category">
+                            <i class="fas fa-filter"></i>
+                            Automation
+                        </span>
+                        <a href="https://github.com/achrefbenmbarek1" target="_blank" rel="noopener noreferrer" data-testid="link-n8n-project">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Kubernetes Platform -->
+                <div class="project-card-main card-hover">
+                    <div class="project-header">
+                        <div class="project-icon primary">
+                            <i class="fas fa-dharmachakra"></i>
+                        </div>
+                        <h3>Developer Platform</h3>
+                    </div>
+                    
+                    <p class="project-description">
+                        Developed a comprehensive internal developer platform leveraging Kubernetes, with custom Crossplane 
+                        extensions and automated certificate management for production-ready deployments.
+                    </p>
+                    
+                    <div class="tech-tags">
+                        <span class="tech-tag">Kubernetes</span>
+                        <span class="tech-tag">Crossplane</span>
+                        <span class="tech-tag">Go</span>
+                        <span class="tech-tag">Argo CD</span>
+                    </div>
+                    
+                    <div class="project-footer">
+                        <span class="project-category">
+                            <i class="fas fa-cloud"></i>
+                            DevOps
+                        </span>
+                        <a href="https://github.com/achrefbenmbarek1" target="_blank" rel="noopener noreferrer" data-testid="link-k8s-project">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Comprehensive expertise across modern technology stacks</p>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- AI/ML -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon primary">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>MLOps / Agentic AI</h3>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tech-tag">RAG</span>
+                        <span class="tech-tag">Gemini</span>
+                        <span class="tech-tag">Embeddings</span>
+                        <span class="tech-tag">PgVector</span>
+                        <span class="tech-tag">LangChain</span>
+                        <span class="tech-tag">LangGraph</span>
+                    </div>
+                </div>
+                
+                <!-- Cloud-Native -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon accent">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3>Cloud-Native Tools</h3>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Kubernetes</span>
+                        <span class="tech-tag">Prometheus</span>
+                        <span class="tech-tag">Jaeger</span>
+                        <span class="tech-tag">Argo CD</span>
+                        <span class="tech-tag">Crossplane</span>
+                        <span class="tech-tag">Docker</span>
+                    </div>
+                </div>
+                
+                <!-- CI/CD -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon primary">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>CI/CD Tools</h3>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tech-tag">GitHub Actions</span>
+                        <span class="tech-tag">Azure DevOps</span>
+                        <span class="tech-tag">Selenium</span>
+                        <span class="tech-tag">Pytest</span>
+                        <span class="tech-tag">Pact</span>
+                        <span class="tech-tag">MSTest</span>
+                    </div>
+                </div>
+                
+                <!-- Languages & Frameworks -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon accent">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Languages & Frameworks</h3>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tech-tag">.NET</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">Go</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Angular</span>
+                    </div>
+                </div>
+                
+                <!-- Databases -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon primary">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Databases</h3>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Redis</span>
+                        <span class="tech-tag">KurrentDB</span>
+                    </div>
+                </div>
+                
+                <!-- Soft Skills -->
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon accent">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Soft Skills</h3>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Curiosity</span>
+                        <span class="tech-tag">Problem Solving</span>
+                        <span class="tech-tag">Reliability</span>
+                        <span class="tech-tag">Autonomy</span>
+                        <span class="tech-tag">Team Player</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container contact-container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's discuss opportunities and collaborate on innovative projects</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-intro">
+                        <h3>Let's Connect</h3>
+                        <p>
+                            I'm always interested in discussing new opportunities, innovative projects, 
+                            or the intersection of technology, science, and finance. Whether you're looking 
+                            for a curious problem-solver or want to explore technical challenges together, 
+                            I'd love to hear from you.
+                        </p>
+                    </div>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon primary">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="contact-label">Email</p>
+                                <a href="mailto:achrefbenmbarek123@gmail.com" data-testid="contact-email">
+                                    achrefbenmbarek123@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon accent">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <p class="contact-label">Phone</p>
+                                <p class="contact-value">(+216) 29 225 720</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon primary">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <p class="contact-label">Location</p>
+                                <p class="contact-value">Tunis, Tunisia</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <a href="https://github.com/achrefbenmbarek1" target="_blank" rel="noopener noreferrer" data-testid="contact-github">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/achref-ben-mbarek-3356a8224" target="_blank" rel="noopener noreferrer" data-testid="contact-linkedin">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-card">
+                    <h3>Send a Message</h3>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" data-testid="input-name" required>
+                            <span class="error-message" id="name-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your.email@example.com" data-testid="input-email" required>
+                            <span class="error-message" id="email-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="What's this about?" data-testid="input-subject" required>
+                            <span class="error-message" id="subject-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Your message..." data-testid="textarea-message" required></textarea>
+                            <span class="error-message" id="message-error"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full" data-testid="button-submit">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Send Message</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>© 2024 Achref Ben Mbarek. Built with curiosity and precision.</p>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="https://github.com/achrefbenmbarek1" target="_blank" rel="noopener noreferrer" data-testid="footer-github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/achref-ben-mbarek-3356a8224" target="_blank" rel="noopener noreferrer" data-testid="footer-linkedin">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:achrefbenmbarek123@gmail.com" data-testid="footer-email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <div class="toast-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="toast-message">
+                <div class="toast-title">Success!</div>
+                <div class="toast-description">Your message has been sent.</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
